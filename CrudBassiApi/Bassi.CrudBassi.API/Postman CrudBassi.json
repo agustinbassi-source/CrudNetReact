@@ -1,0 +1,364 @@
+﻿{
+  "info": {
+    "_postman_id": "7598e89b-a3bd-45d6-a4bc-389f9c3f3585",
+    "name": "CrudBassi.Api",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Receipts POST",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"id\": 0,\r\n    \"clientId\": 1,\r\n    \"receiptDetail\":  [\r\n                    {\r\n            \"productId\": 1,\r\n            \"amount\": 1,\r\n        },\r\n        {\r\n            \"productId\": 1,\r\n            \"amount\": 1,\r\n        }\r\n    ],\r\n}"
+        },
+        "url": {
+          "raw": "{{url}}api/Receipts",
+          "host": [
+            "{{url}}api"
+          ],
+          "path": [
+            "Receipts"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Receipts PUT",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"id\": 1,\r\n    \"clientId\": 1,\r\n    \"receiptDetail\":  [\r\n                    {\r\n            \"id\": 1,\r\n            \"productId\": 1,\r\n            \"amount\": 1,\r\n        },\r\n        {\r\n            \"id\": 2,\r\n            \"productId\": 1,\r\n            \"amount\": 1,\r\n        }\r\n    ],\r\n}"
+        },
+        "url": {
+          "raw": "{{url}}api/Receipts/1",
+          "host": [
+            "{{url}}api"
+          ],
+          "path": [
+            "Receipts",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Receipts GET",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}api/Receipts/1",
+          "host": [
+            "{{url}}api"
+          ],
+          "path": [
+            "Receipts",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Receipts GET ALL",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}api/Receipts",
+          "host": [
+            "{{url}}api"
+          ],
+          "path": [
+            "Receipts"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Receipts GET PAGE",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n\t\"pageSize\": 4,\r\n    \"pageNumber\": 1,\r\n}"
+        },
+        "url": {
+          "raw": "{{url}}api/Receipts/GetPage",
+          "host": [
+            "{{url}}api"
+          ],
+          "path": [
+            "Receipts",
+            "GetPage"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Clients POST",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"id\": 0,\r\n    \"name\": \"Data\"\r\n}"
+        },
+        "url": {
+          "raw": "{{url}}api/Clients",
+          "host": [
+            "{{url}}api"
+          ],
+          "path": [
+            "Clients"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Clients PUT",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"NewData\"\r\n}"
+        },
+        "url": {
+          "raw": "{{url}}api/Clients/1",
+          "host": [
+            "{{url}}api"
+          ],
+          "path": [
+            "Clients",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Clients GET",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}api/Clients/1",
+          "host": [
+            "{{url}}api"
+          ],
+          "path": [
+            "Clients",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Clients GET ALL",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}api/Clients",
+          "host": [
+            "{{url}}api"
+          ],
+          "path": [
+            "Clients"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Clients GET PAGE",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n\t\"pageSize\": 4,\r\n    \"pageNumber\": 1,\r\n}"
+        },
+        "url": {
+          "raw": "{{url}}api/Clients/GetPage",
+          "host": [
+            "{{url}}api"
+          ],
+          "path": [
+            "Clients",
+            "GetPage"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Products POST",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"id\": 0,\r\n    \"name\": \"Data\"\r\n}"
+        },
+        "url": {
+          "raw": "{{url}}api/Products",
+          "host": [
+            "{{url}}api"
+          ],
+          "path": [
+            "Products"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Products PUT",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"NewData\"\r\n}"
+        },
+        "url": {
+          "raw": "{{url}}api/Products/1",
+          "host": [
+            "{{url}}api"
+          ],
+          "path": [
+            "Products",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Products GET",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}api/Products/1",
+          "host": [
+            "{{url}}api"
+          ],
+          "path": [
+            "Products",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Products GET ALL",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}api/Products",
+          "host": [
+            "{{url}}api"
+          ],
+          "path": [
+            "Products"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Products GET PAGE",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n\t\"pageSize\": 4,\r\n    \"pageNumber\": 1,\r\n}"
+        },
+        "url": {
+          "raw": "{{url}}api/Products/GetPage",
+          "host": [
+            "{{url}}api"
+          ],
+          "path": [
+            "Products",
+            "GetPage"
+          ]
+        }
+      },
+      "response": []
+    },
+  ],
+  "protocolProfileBehavior": {}
+}
