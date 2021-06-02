@@ -43,17 +43,17 @@ namespace Bassi.CrudBassi.Test
 
             DbContextEf dbContextEf = new DbContextEf(options);
 
-            _receiptRepository = new ReceiptRepository(null, dbContextEf);
-            _receiptDetailRepository = new ReceiptDetailRepository(null, dbContextEf);
-            _clientRepository = new ClientRepository(null, dbContextEf);
-            _productRepository = new ProductRepository(null, dbContextEf);
+            _receiptRepository = new ReceiptRepository(null, dbContextEf, null);
+            _receiptDetailRepository = new ReceiptDetailRepository(null, dbContextEf, null);
+            _clientRepository = new ClientRepository(null, dbContextEf, null);
+            _productRepository = new ProductRepository(null, dbContextEf, null);
 
 
 
 
             _manager = new ReceiptManager(_receiptRepository, _receiptDetailRepository, _clientRepository, _productRepository);
 
-            _controller = new ReceiptController(_manager);
+            _controller = new ReceiptController(null, _manager);
 
             foreach (var item in GetData())
             {

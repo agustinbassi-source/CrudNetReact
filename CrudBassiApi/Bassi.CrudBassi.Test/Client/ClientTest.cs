@@ -40,14 +40,14 @@ namespace Bassi.CrudBassi.Test
 
             DbContextEf dbContextEf = new DbContextEf(options);
 
-            _clientRepository = new ClientRepository(null, dbContextEf);
+            _clientRepository = new ClientRepository(null, dbContextEf, null);
 
 
 
 
             _manager = new ClientManager(_clientRepository);
 
-            _controller = new ClientController(_manager);
+            _controller = new ClientController(null, _manager);
 
             foreach (var item in GetData())
             {

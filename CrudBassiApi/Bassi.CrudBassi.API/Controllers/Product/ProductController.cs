@@ -38,7 +38,7 @@ namespace Bassi.CrudBassi.API.Controllers
                     if (info != null && info.Length > 21844)
                         info = info.Substring(0, 21844);
 
-                if (_configuration.GetValue<bool>("UseLog"))
+                if (_configuration != null && _configuration.GetValue<bool>("UseLog"))
                 {
                 }
 
@@ -78,7 +78,7 @@ namespace Bassi.CrudBassi.API.Controllers
                     if (info != null && info.Length > 21844)
                         info = info.Substring(0, 21844);
 
-                if (_configuration.GetValue<bool>("UseLog"))
+                if (_configuration != null && _configuration.GetValue<bool>("UseLog"))
                 {
                 }
 
@@ -123,7 +123,7 @@ namespace Bassi.CrudBassi.API.Controllers
                     if (info != null && info.Length > 21844)
                         info = info.Substring(0, 21844);
 
-                if (_configuration.GetValue<bool>("UseLog"))
+                if (_configuration != null && _configuration.GetValue<bool>("UseLog"))
                 {
                 }
 
@@ -156,7 +156,7 @@ namespace Bassi.CrudBassi.API.Controllers
                     if (info != null && info.Length > 21844)
                         info = info.Substring(0, 21844);
 
-                if (_configuration.GetValue<bool>("UseLog"))
+                if (_configuration != null && _configuration.GetValue<bool>("UseLog"))
                 {
                 }
 
@@ -189,7 +189,7 @@ namespace Bassi.CrudBassi.API.Controllers
                     if (info != null && info.Length > 21844)
                         info = info.Substring(0, 21844);
 
-                if (_configuration.GetValue<bool>("UseLog"))
+                if (_configuration != null && _configuration.GetValue<bool>("UseLog"))
                 {
                 }
 
@@ -222,7 +222,7 @@ namespace Bassi.CrudBassi.API.Controllers
                     if (info != null && info.Length > 21844)
                         info = info.Substring(0, 21844);
 
-                if (_configuration.GetValue<bool>("UseLog"))
+                if (_configuration != null && _configuration.GetValue<bool>("UseLog"))
                 {
                 }
 
